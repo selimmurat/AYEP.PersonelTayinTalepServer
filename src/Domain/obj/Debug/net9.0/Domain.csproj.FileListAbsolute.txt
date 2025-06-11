@@ -1,0 +1,11 @@
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\bin\Debug\net9.0\Domain.deps.json
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\bin\Debug\net9.0\Domain.dll
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\bin\Debug\net9.0\Domain.pdb
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\obj\Debug\net9.0\Domain.dll
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\obj\Debug\net9.0\refint\Domain.dll
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\obj\Debug\net9.0\Domain.pdb
+D:\AYEP.PersonelTayinTalep\AYEP.PersonelTayinTalepServer\src\Domain\obj\Debug\net9.0\ref\Domain.dll

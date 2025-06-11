@@ -1,0 +1,6 @@
+@AYEP.PersonelTayinTalepWebApi_HostAddress = http://localhost:5000
+
+GET {{AYEP.PersonelTayinTalepWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,991 @@
+[
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.AdaletKomisyonlari.AdaletKomisyonuController",
+    "Method": "Create",
+    "RelativePath": "api/AdaletKomisyonu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.AdaletKomisyonlari.Command.Create.CreateAdaletKomisyonuCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.AdaletKomisyonlari.AdaletKomisyonuController",
+    "Method": "GetAll",
+    "RelativePath": "api/AdaletKomisyonu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.Shared.Results.IResultBase",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.AdaletKomisyonlari.AdaletKomisyonuController",
+    "Method": "Update",
+    "RelativePath": "api/AdaletKomisyonu/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.AdaletKomisyonlari.Command.Update.UpdateAdaletKomisyonuCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.AdaletKomisyonlari.AdaletKomisyonuController",
+    "Method": "Delete",
+    "RelativePath": "api/AdaletKomisyonu/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.AdaletKomisyonlari.AdaletKomisyonuController",
+    "Method": "GetById",
+    "RelativePath": "api/AdaletKomisyonu/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.Shared.Results.IResultBase",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Adliyeler.AdliyeController",
+    "Method": "GetAll",
+    "RelativePath": "api/Adliye",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Adliyeler.AdliyeController",
+    "Method": "Create",
+    "RelativePath": "api/Adliye",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Adliyeler.Command.Create.CreateAdliyeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Adliyeler.AdliyeController",
+    "Method": "GetById",
+    "RelativePath": "api/Adliye/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Adliyeler.AdliyeController",
+    "Method": "Update",
+    "RelativePath": "api/Adliye/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.Adliyeler.Command.Update.UpdateAdliyeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Adliyeler.AdliyeController",
+    "Method": "Delete",
+    "RelativePath": "api/Adliye/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Adliyeler.AdliyeController",
+    "Method": "GetByKomisyon",
+    "RelativePath": "api/Adliye/by-komisyon/{komisyonId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "komisyonId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Auth.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Auth.Commands.Login.LoginPersonelCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Birimler.BirimController",
+    "Method": "GetAll",
+    "RelativePath": "api/Birim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Birimler.BirimController",
+    "Method": "Create",
+    "RelativePath": "api/Birim",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Birimler.Command.Create.CreateBirimCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Birimler.BirimController",
+    "Method": "GetById",
+    "RelativePath": "api/Birim/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Birimler.BirimController",
+    "Method": "Update",
+    "RelativePath": "api/Birim/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.Birimler.Command.Update.UpdateBirimCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Birimler.BirimController",
+    "Method": "Delete",
+    "RelativePath": "api/Birim/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Birimler.BirimController",
+    "Method": "GetByAdliye",
+    "RelativePath": "api/Birim/by-adliye/{adliyeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adliyeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Personeller.PersonelController",
+    "Method": "GetAll",
+    "RelativePath": "api/Personel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Personeller.PersonelController",
+    "Method": "Create",
+    "RelativePath": "api/Personel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CreatePersonelCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Personeller.PersonelController",
+    "Method": "GetById",
+    "RelativePath": "api/Personel/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Personeller.PersonelController",
+    "Method": "Update",
+    "RelativePath": "api/Personel/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.Personeller.Command.Update.UpdatePersonelCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Personeller.PersonelController",
+    "Method": "Delete",
+    "RelativePath": "api/Personel/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.Personeller.PersonelController",
+    "Method": "Login",
+    "RelativePath": "api/Personel/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Auth.Commands.Login.LoginPersonelCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelBirimGorevlendirmeler.PersonelBirimGorevlendirmeController",
+    "Method": "GetAll",
+    "RelativePath": "api/PersonelBirimGorevlendirme",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelBirimGorevlendirmeler.PersonelBirimGorevlendirmeController",
+    "Method": "Create",
+    "RelativePath": "api/PersonelBirimGorevlendirme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.PersonelBirimGorevlendirmeler.Command.Create.CreatePersonelBirimGorevlendirmeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelBirimGorevlendirmeler.PersonelBirimGorevlendirmeController",
+    "Method": "GetById",
+    "RelativePath": "api/PersonelBirimGorevlendirme/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelBirimGorevlendirmeler.PersonelBirimGorevlendirmeController",
+    "Method": "Update",
+    "RelativePath": "api/PersonelBirimGorevlendirme/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.PersonelBirimGorevlendirmeler.Command.Update.UpdatePersonelBirimGorevlendirmeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelBirimGorevlendirmeler.PersonelBirimGorevlendirmeController",
+    "Method": "Delete",
+    "RelativePath": "api/PersonelBirimGorevlendirme/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelBirimGorevlendirmeler.PersonelBirimGorevlendirmeController",
+    "Method": "GetByPersonelId",
+    "RelativePath": "api/PersonelBirimGorevlendirme/by-personel/{personelId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personelId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepleri.PersonelTayinTalepController",
+    "Method": "Create",
+    "RelativePath": "api/PersonelTayinTalep",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.PersonelTayinTalepleri.Command.Create.CreatePersonelTayinTalep.CreatePersonelTayinTalepCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepleri.PersonelTayinTalepController",
+    "Method": "Update",
+    "RelativePath": "api/PersonelTayinTalep/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.PersonelTayinTalepleri.Command.Update.UpdatePersonelTayinTalepCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepleri.PersonelTayinTalepController",
+    "Method": "Delete",
+    "RelativePath": "api/PersonelTayinTalep/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepleri.PersonelTayinTalepController",
+    "Method": "Cancel",
+    "RelativePath": "api/PersonelTayinTalep/{id}/cancel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepleri.PersonelTayinTalepController",
+    "Method": "GetByPersonelId",
+    "RelativePath": "api/PersonelTayinTalep/{personelId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personelId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepTercih.PersonelTayinTalepTercihController",
+    "Method": "Create",
+    "RelativePath": "api/PersonelTayinTalepTercih",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.PersonelTayinTalepleri.Command.Create.PersonelTayinTalepTercih.CreatePersonelTayinTalepTercihCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepTercih.PersonelTayinTalepTercihController",
+    "Method": "Update",
+    "RelativePath": "api/PersonelTayinTalepTercih/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.PersonelTayinTalepleri.Command.Update.PersonelTayinTalepTercih.UpdatePersonelTayinTalepTercihCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepTercih.PersonelTayinTalepTercihController",
+    "Method": "Delete",
+    "RelativePath": "api/PersonelTayinTalepTercih/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AYEP.PersonelTayinTalepWebApi.Controllers.PersonelTayinTalepTercih.PersonelTayinTalepTercihController",
+    "Method": "GetByTalepId",
+    "RelativePath": "api/PersonelTayinTalepTercih/ByTalep/{talepId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "talepId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Http.IResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

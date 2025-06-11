@@ -1,0 +1,2439 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "AYEP.PersonelTayinTalep API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/AdaletKomisyonu": {
+      "post": {
+        "tags": [
+          "AdaletKomisyonu"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAdaletKomisyonuCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAdaletKomisyonuCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAdaletKomisyonuCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "AdaletKomisyonu"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResultBase"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResultBase"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResultBase"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AdaletKomisyonu/{id}": {
+      "put": {
+        "tags": [
+          "AdaletKomisyonu"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdaletKomisyonuCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdaletKomisyonuCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdaletKomisyonuCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AdaletKomisyonu"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "AdaletKomisyonu"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResultBase"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResultBase"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResultBase"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Adliye": {
+      "get": {
+        "tags": [
+          "Adliye"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Adliye"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAdliyeCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAdliyeCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAdliyeCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Adliye/{id}": {
+      "get": {
+        "tags": [
+          "Adliye"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Adliye"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdliyeCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdliyeCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdliyeCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Adliye"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Adliye/by-komisyon/{komisyonId}": {
+      "get": {
+        "tags": [
+          "Adliye"
+        ],
+        "parameters": [
+          {
+            "name": "komisyonId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginPersonelCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginPersonelCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginPersonelCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Birim": {
+      "get": {
+        "tags": [
+          "Birim"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Birim"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBirimCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBirimCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBirimCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Birim/{id}": {
+      "get": {
+        "tags": [
+          "Birim"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Birim"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBirimCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBirimCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBirimCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Birim"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Birim/by-adliye/{adliyeId}": {
+      "get": {
+        "tags": [
+          "Birim"
+        ],
+        "parameters": [
+          {
+            "name": "adliyeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Personel": {
+      "get": {
+        "tags": [
+          "Personel"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Personel"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Personel/{id}": {
+      "get": {
+        "tags": [
+          "Personel"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Personel"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Personel"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Personel/login": {
+      "post": {
+        "tags": [
+          "Personel"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginPersonelCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginPersonelCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginPersonelCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelBirimGorevlendirme": {
+      "get": {
+        "tags": [
+          "PersonelBirimGorevlendirme"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PersonelBirimGorevlendirme"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelBirimGorevlendirmeCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelBirimGorevlendirmeCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelBirimGorevlendirmeCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelBirimGorevlendirme/{id}": {
+      "get": {
+        "tags": [
+          "PersonelBirimGorevlendirme"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PersonelBirimGorevlendirme"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelBirimGorevlendirmeCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelBirimGorevlendirmeCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelBirimGorevlendirmeCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PersonelBirimGorevlendirme"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelBirimGorevlendirme/by-personel/{personelId}": {
+      "get": {
+        "tags": [
+          "PersonelBirimGorevlendirme"
+        ],
+        "parameters": [
+          {
+            "name": "personelId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelTayinTalep/{personelId}": {
+      "get": {
+        "tags": [
+          "PersonelTayinTalep"
+        ],
+        "parameters": [
+          {
+            "name": "personelId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelTayinTalep": {
+      "post": {
+        "tags": [
+          "PersonelTayinTalep"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelTayinTalepCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelTayinTalepCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelTayinTalepCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelTayinTalep/{id}": {
+      "put": {
+        "tags": [
+          "PersonelTayinTalep"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelTayinTalepCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelTayinTalepCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelTayinTalepCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PersonelTayinTalep"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelTayinTalep/{id}/cancel": {
+      "post": {
+        "tags": [
+          "PersonelTayinTalep"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelTayinTalepTercih/ByTalep/{talepId}": {
+      "get": {
+        "tags": [
+          "PersonelTayinTalepTercih"
+        ],
+        "parameters": [
+          {
+            "name": "talepId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelTayinTalepTercih": {
+      "post": {
+        "tags": [
+          "PersonelTayinTalepTercih"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelTayinTalepTercihCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelTayinTalepTercihCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePersonelTayinTalepTercihCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PersonelTayinTalepTercih/{id}": {
+      "put": {
+        "tags": [
+          "PersonelTayinTalepTercih"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelTayinTalepTercihCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelTayinTalepTercihCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonelTayinTalepTercihCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PersonelTayinTalepTercih"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdaletKomisyonu": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "ilId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adliyeler": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adliye"
+            },
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adliye": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "komisyonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "komisyon": {
+            "$ref": "#/components/schemas/AdaletKomisyonu"
+          },
+          "birimler": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Birim"
+            },
+            "nullable": true
+          },
+          "isMerkez": {
+            "type": "boolean"
+          },
+          "hizmetBolgesi": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hizmetPuani": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Birim": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "adliyeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adliye": {
+            "$ref": "#/components/schemas/Adliye"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "personelGorevlendirmeleri": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PersonelBirimGorevlendirme"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Cinsiyet": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "CreateAdaletKomisyonuCommand": {
+        "type": "object",
+        "properties": {
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "ilId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateAdliyeCommand": {
+        "type": "object",
+        "properties": {
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "adaletKomisyonuId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ilId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateBirimCommand": {
+        "type": "object",
+        "properties": {
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "adliyeId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePersonelBirimGorevlendirmeCommand": {
+        "type": "object",
+        "properties": {
+          "personelId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "birimId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unvanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "baslangicTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "bitisTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "gorevAciklama": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePersonelCommand": {
+        "type": "object",
+        "properties": {
+          "sicilNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "tcKimlikNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "soyad": {
+            "type": "string",
+            "nullable": true
+          },
+          "cinsiyet": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "telefon": {
+            "type": "string",
+            "nullable": true
+          },
+          "eposta": {
+            "type": "string",
+            "nullable": true
+          },
+          "unvan": {
+            "type": "string",
+            "nullable": true
+          },
+          "birimId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "unvanId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "gorevlendirmeBaslangicTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "gorevAciklama": {
+            "type": "string",
+            "nullable": true
+          },
+          "ilkGirisTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "kurumaBaslamaTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "asaletTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ayrilisTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ayrilisNedeni": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePersonelTayinTalepCommand": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "$ref": "#/components/schemas/CreatePersonelTayinTalepDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePersonelTayinTalepDto": {
+        "type": "object",
+        "properties": {
+          "personelId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "talepTuru": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "talepNedeni": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "aciklama": {
+            "type": "string",
+            "nullable": true
+          },
+          "tercihler": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreatePersonelTayinTalepTercihCommand"
+            },
+            "nullable": true
+          },
+          "gerekceler": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePersonelTayinTalepTercihCommand": {
+        "type": "object",
+        "properties": {
+          "adliyeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tercihSirasi": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Email": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IResult": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "IResultBase": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "KullaniciSifre": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "personelId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sifreHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "sifreSalt": {
+            "type": "string",
+            "nullable": true
+          },
+          "sonDegisimTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "personel": {
+            "$ref": "#/components/schemas/Personel"
+          },
+          "ilkGirisMi": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginPersonelCommand": {
+        "type": "object",
+        "properties": {
+          "sicilNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "sifre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Personel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tcKimlikNo": {
+            "$ref": "#/components/schemas/TCKimlikNo"
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "soyad": {
+            "type": "string",
+            "nullable": true
+          },
+          "cinsiyet": {
+            "$ref": "#/components/schemas/Cinsiyet"
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "sicilNo": {
+            "$ref": "#/components/schemas/SicilNo"
+          },
+          "unvan": {
+            "$ref": "#/components/schemas/Unvan"
+          },
+          "phoneNumber": {
+            "$ref": "#/components/schemas/PhoneNumber"
+          },
+          "email": {
+            "$ref": "#/components/schemas/Email"
+          },
+          "memuriyetBaslamaTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "asaletTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ayrilisTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ayrilisNedeni": {
+            "type": "string",
+            "nullable": true
+          },
+          "kullaniciSifre": {
+            "$ref": "#/components/schemas/KullaniciSifre"
+          },
+          "rol": {
+            "$ref": "#/components/schemas/Rol"
+          },
+          "personelGorevlendirmeleri": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PersonelBirimGorevlendirme"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PersonelBirimGorevlendirme": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "personelId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "personel": {
+            "$ref": "#/components/schemas/Personel"
+          },
+          "birimId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "birim": {
+            "$ref": "#/components/schemas/Birim"
+          },
+          "unvanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "baslangicTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "bitisTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "aktifMi": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "gorevAciklama": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PhoneNumber": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Rol": {
+        "enum": [
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "SicilNo": {
+        "type": "object",
+        "properties": {
+          "sicilNo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TCKimlikNo": {
+        "type": "object",
+        "properties": {
+          "tcKimlikNo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Unvan": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "UpdateAdaletKomisyonuCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "ilId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateAdliyeCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "adaletKomisyonuId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ilId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateBirimCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "adliyeId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePersonelBirimGorevlendirmeCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "personelId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "birimId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unvan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "baslangicTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "bitisTarihi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePersonelCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ad": {
+            "type": "string",
+            "nullable": true
+          },
+          "soyad": {
+            "type": "string",
+            "nullable": true
+          },
+          "sicilNo": {
+            "$ref": "#/components/schemas/SicilNo"
+          },
+          "unvan": {
+            "$ref": "#/components/schemas/Unvan"
+          },
+          "phoneNumber": {
+            "$ref": "#/components/schemas/PhoneNumber"
+          },
+          "email": {
+            "$ref": "#/components/schemas/Email"
+          },
+          "memuriyetBaslamaTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "asaletTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ayrilisTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ayrilisNedeni": {
+            "type": "string",
+            "nullable": true
+          },
+          "kullaniciSifre": {
+            "$ref": "#/components/schemas/KullaniciSifre"
+          },
+          "rol": {
+            "$ref": "#/components/schemas/Rol"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePersonelTayinTalepCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "personelId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "talepTuru": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "talepNedeni": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "aciklama": {
+            "type": "string",
+            "nullable": true
+          },
+          "gerekceler": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePersonelTayinTalepTercihCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adliyeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tercihSirasi": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer eyJhbGci...\"",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}
