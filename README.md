@@ -53,7 +53,7 @@ Temel özellikler:
 
 ## Kurulum
 
-> Not: Aşağıdaki adımlar varsayılan olarak Visual Studio/VS Code, .NET 8 ve SQL Server kullanılarak yazılmıştır.
+> Not: Aşağıdaki adımlar varsayılan olarak Microsoft Visual Studio 2022 .NET 9 ve SQL Server kullanılarak yazılmıştır.
 
 ### 1. Projeyi Klonla
 
