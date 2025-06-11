@@ -50,9 +50,6 @@ Temel özellikler:
 - Tayin talebi oluşturma ve taleplerin yönetimi
 - JWT ile kullanıcı girişi ve rol tabanlı erişim
 - Detaylı hata ve validasyon mesajları
-- Swagger ile dokümantasyon
-
----
 
 ## Kurulum
 
